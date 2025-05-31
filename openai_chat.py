@@ -2,7 +2,7 @@
 
 import os
 from openai import OpenAI
-from openai.types import APIError, RateLimitError
+from openai import APIError, RateLimitError
 
 # Create the client using the environment variable (set in app.py)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
