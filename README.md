@@ -1,6 +1,6 @@
 # CSV GPT Chatbot 🤖📊
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-App-blue?logo=streamlit)](https://bhanudev-csv-gpt-chatbot.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-blue?logo=streamlit)](https://csv-gpt-chatbot.streamlit.app)
 [![GitHub license](https://img.shields.io/github/license/bhanudev/csv-gpt-chatbot)](https://github.com/bhanudev/csv-gpt-chatbot/blob/main/LICENSE)
 [![Open Issues](https://img.shields.io/github/issues/bhanudev/csv-gpt-chatbot)](https://github.com/bhanudev/csv-gpt-chatbot/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/bhanudev/csv-gpt-chatbot)](https://github.com/bhanudev/csv-gpt-chatbot/commits/main)
@@ -11,7 +11,7 @@
 
 Try the app online — no install needed:
 
-👉 [https://bhanudev-csv-gpt-chatbot.streamlit.app](https://csv-gpt-chatbot.streamlit.app/)
+👉 [https://csv-gpt-chatbot.streamlit.app](https://csv-gpt-chatbot.streamlit.app/)
 
 ---
 
