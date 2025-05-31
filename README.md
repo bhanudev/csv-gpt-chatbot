@@ -16,7 +16,7 @@ An interactive AI-powered chatbot built with OpenAI's GPT-4 API and Streamlit th
 
 ## Demo
 
-[Insert your Streamlit Cloud app link here]
+https://csv-gpt-chatbot.streamlit.app/
 
 ---
 
