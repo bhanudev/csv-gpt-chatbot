@@ -1,12 +1,11 @@
-#app.py
-
 import streamlit as st
 import pandas as pd
 from openai_chat import ask_gpt
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
+# Use Streamlit Secrets instead of dotenv
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = openai_api_key
 
 st.set_page_config(page_title="CSV GPT Chatbot", layout="wide")
 st.title("🤖 Chat with Your CSV (GPT-powered)")
