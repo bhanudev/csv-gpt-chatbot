@@ -11,7 +11,7 @@
 
 Try the app online — no install needed:
 
-👉 [https://bhanudev-csv-gpt-chatbot.streamlit.app](https://bhanudev-csv-gpt-chatbot.streamlit.app)
+👉 [https://bhanudev-csv-gpt-chatbot.streamlit.app](https://csv-gpt-chatbot.streamlit.app/)
 
 ---
 
