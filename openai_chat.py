@@ -1,23 +1,17 @@
-#openai_chat.py
+# openai_chat.py
 
-import openai
 import os
+from openai import OpenAI
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def ask_gpt(query, df_head):
-    prompt = f"""
-You are a data analyst. A user uploaded the following data:\n{df_head}\n
-Answer their question based on this data: "{query}"
-Only use the visible information, no assumptions.
-"""
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # or "gpt-4" if available
+def ask_gpt(prompt, context):
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You help users analyze CSV data."},
-            {"role": "user", "content": prompt}
+            {"role": "system", "content": "You are a data expert who answers questions about CSV data."},
+            {"role": "user", "content": f"Here is the CSV content:\n{context}\n\nQuestion: {prompt}"}
         ],
-        temperature=0.4,
-        max_tokens=400
+        temperature=0.7,
     )
-    return response.choices[0].message["content"]
+    return response.choices[0].message.content.strip()
